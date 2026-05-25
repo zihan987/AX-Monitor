@@ -23,14 +23,12 @@ Metrics:
 - SoC temperature from `/sys/class/thermal/thermal_zone0/temp`
 - AX bandwidth from `/proc/ax_proc/bw/bw`
 
-## Install
+## Installation
 
-### From GitHub
-
-Replace `YOUR_NAME/axmon` with your repository path:
+Install directly from GitHub:
 
 ```bash
-npm install -g github:YOUR_NAME/axmon
+npm install -g github:zihan987/AX-Monitor
 ```
 
 Run:
@@ -39,21 +37,7 @@ Run:
 axmon
 ```
 
-### From npm
-
-After publishing this package to npm:
-
-```bash
-npm install -g @ax-embedded/axmon
-```
-
-Run:
-
-```bash
-axmon
-```
-
-### From Local Source
+### Local Install
 
 Inside this repository:
 
@@ -170,14 +154,11 @@ npm pack --dry-run
 
 ## Uninstall
 
-If installed globally with npm:
+If installed from GitHub or local source:
 
 ```bash
 npm uninstall -g @ax-embedded/axmon
 ```
-
-If installed from GitHub or local source, npm still records the package by the
-`name` in `package.json`, so the same uninstall command applies.
 
 If your shell still points to an old path after uninstalling, clear bash's
 command cache:
@@ -194,4 +175,3 @@ hash -r
   `ax_dashboard`.
 - `insmod` and `stty` may be used at runtime for bandwidth monitoring and
   terminal control.
-

@@ -28,7 +28,7 @@ Metrics:
 Install directly from GitHub:
 
 ```bash
-npm install -g github:zihan987/AX-Monitor
+npm install -g https://github.com/zihan987/AX-Monitor/archive/refs/heads/main.tar.gz
 ```
 
 Run:

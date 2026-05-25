@@ -38,6 +38,12 @@ if (!binary) {
   process.exit(1);
 }
 
+try {
+  fs.chmodSync(binary, 0o755);
+} catch {
+  // If chmod is unavailable or denied, try to run the binary as-is.
+}
+
 const child = run(binary, process.argv.slice(2));
 if (child.error) {
   console.error(child.error.message);

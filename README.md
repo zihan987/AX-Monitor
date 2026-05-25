@@ -120,7 +120,6 @@ cargo build --release
 ```text
 bin/axmon.js                 npm command wrapper
 prebuilt/linux-arm64/axmon   bundled Linux ARM64 binary
-scripts/postinstall.js       install-time binary check
 src/                         Rust source
 Cargo.toml                   Rust package manifest
 package.json                 npm package manifest

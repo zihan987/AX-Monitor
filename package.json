@@ -7,7 +7,6 @@
     "axmon": "bin/axmon.js"
   },
   "scripts": {
-    "postinstall": "node scripts/postinstall.js",
     "build": "cargo build --release",
     "start": "node bin/axmon.js",
     "pack:check": "npm pack --dry-run"
@@ -15,7 +14,6 @@
   "files": [
     "bin/",
     "prebuilt/",
-    "scripts/",
     "src/",
     "Cargo.toml",
     "Cargo.lock",

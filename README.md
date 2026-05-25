@@ -156,7 +156,7 @@ npm pack --dry-run
 If installed from GitHub or local source:
 
 ```bash
-npm uninstall -g @ax-embedded/axmon
+npm uninstall -g ax-monitor
 ```
 
 If your shell still points to an old path after uninstalling, clear bash's
